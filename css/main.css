@@ -32,6 +32,15 @@ header {
     font-size: 17px;
 }
 
+.articles-pets p{
+    font-size: 12px;
+}
+
+.articles-pets a{
+    font-size: 12px;
+}
+
+
 /* =================== =================== */
 footer {
     margin: 30px 0;
