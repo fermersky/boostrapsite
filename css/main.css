@@ -1,0 +1,42 @@
+header {
+    padding: 0 20px;
+}
+
+.pets-img {
+    margin-right: 50px;
+}
+
+/* =================== =================== */
+
+.treat-pets {
+    background: #eee;
+    padding: 40px 60px;
+    border-radius: 10px;
+}
+
+.treat-pets h1 {
+    font-size: 70px;
+}
+
+.treat-pets p {
+    font-size: 18px;
+}
+
+/* =================== =================== */
+
+.articles-pets {
+    margin-top: 30px;
+}
+
+.articles-pets h3{
+    font-size: 17px;
+}
+
+/* =================== =================== */
+footer {
+    margin: 30px 0;
+}
+
+footer p {
+    font-size: 13px;
+}
