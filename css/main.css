@@ -1,51 +1,96 @@
-header {
-    padding: 0 20px;
+/*
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
 }
 
-.pets-img {
-    margin-right: 50px;
+a {
+    text-decoration: none;
 }
 
-/* =================== =================== */
+/* SPLITTERS */
 
-.treat-pets {
-    background: #eee;
-    padding: 40px 60px;
-    border-radius: 10px;
+.splitter {
+    width: 64px;
+    height: 1px;
+    margin: 40px 0;
 }
 
-.treat-pets h1 {
-    font-size: 70px;
+.splitter-white {
+    background: #fff;
 }
 
-.treat-pets p {
-    font-size: 18px;
+/* HEADER */
+
+.header {
+    height: 70px;
+    background: #000;
 }
 
-/* =================== =================== */
+.logo {
+    display: flex;
+    width: auto;
+    height: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
-.articles-pets {
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+}
+
+.nav__item {
+    margin-left: 46px;
+}
+
+.nav__item a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+.nav__item a:hover {
+    text-decoration: none;
+    color: #ff8b38;
+}
+
+/* MODER TEMPLATE */
+
+.axure_section {
+    background: url('../images/upside.png');
+    background-size: cover;
+    padding-top: 110px;
+    padding-bottom: 136px;
+}
+
+.axure__title {
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 46px;
+    margin: 0;
     margin-top: 30px;
 }
 
-.articles-pets h3{
-    font-size: 17px;
+.axure__desc {
+    color: #fff;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 30px;
 }
 
-.articles-pets p{
-    font-size: 12px;
-}
-
-.articles-pets a{
-    font-size: 12px;
-}
-
-
-/* =================== =================== */
-footer {
-    margin: 30px 0;
-}
-
-footer p {
-    font-size: 13px;
-}
