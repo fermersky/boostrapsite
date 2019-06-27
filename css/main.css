@@ -20,6 +20,14 @@ body {
     overflow-x: hidden;
 }
 
+.section_head {
+    margin: 0; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;   
+    font-weight: normal;
+    text-align: center;
+}
+
 .section_title {
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
@@ -38,12 +46,21 @@ body {
 .splitter {
     width: 64px;
     height: 2px;
-    margin: 30px 0 30px 0;
+    margin: 30px auto;
+}
+
+.splitter_from-start {
+    margin-left: 0;
 }
 
 .splitter-white {
     background: #fff;
 }
+
+.splitter_orange {
+    background: #ff8b38;
+}
+
 
 /* =============== HEADER =============== */
 
@@ -165,10 +182,10 @@ body {
     background: #fff;
 }
 
-.from_content__input {
+.form_content__input {
     color: #BDBDBD;
     padding: 0 13px;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     width: 100%;
     height: 30px;
@@ -177,8 +194,9 @@ body {
     margin-bottom: 36px;
 }
 
-.from_content__input:focus {
+.form_content__input:focus {
     outline: none;
+    border-bottom: 1px solid #ff8b38;
 }
 
 .submit_trial {
@@ -342,9 +360,6 @@ body {
     margin-top: 35px;
 }
 
-.splitter_orange {
-    background: #ff8b38;
-}
 
 
 
@@ -419,16 +434,7 @@ body {
 }
 
 
-.awesome_section h2{
-    margin: 0; 
-    font-family: 'Raleway', sans-serif;
-    font-size: 36px;     
-}
 
-.awesome_section .splitter {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .orange_circle-large {
     width: 64px;
@@ -462,15 +468,8 @@ body {
     padding-bottom: 90px;    
 }
 
-.pricing_section h2 {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    margin: 0;
-}
 
-.pricing_section .splitter_orange {
-    margin: 28px auto;
-}
+
 
 .pricing_section .section_desc {
     text-align: center; 
@@ -549,3 +548,164 @@ body {
     padding: 10px 0;
     border-bottom: 1px solid #f5f5f5;
 }
+
+/* =============== CUSTOMERS SAYING =============== */
+
+.customers_feed {
+    text-align: center;
+    padding-top: 106px;
+    padding-bottom: 100px;
+}
+
+
+
+.customers_feed .section_desc {
+    margin-bottom: 56px;
+}
+
+.customers_feed p{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.fb__text {
+    text-align: left;
+    padding: 22px 10px 24px 14px;
+    font-style: italic;
+    background: #f5f5f5;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.fb__text.section_desc {
+    margin-bottom: 20px;
+}
+
+.fb__text::before {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    border-top: 15px solid #f5f5f5;
+    content: '';
+    left: 23px;
+    bottom: -15px;
+}
+
+.fb__author {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #000;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.fb__author_info {
+    margin-left: 15px;
+    padding-top: 10px;    
+}
+
+.fb__author_info > .name {
+    width: 40px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    width: 100px;
+}
+
+.fb__author_info > .role {
+    width: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #b4b4b7;
+}
+
+/* =============== STYLISH =============== */
+
+.stylish_fluid {
+    background: url('../images/street.png') no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 62px;
+}
+
+.stylish_fluid h2 {
+    color: #fff;
+}
+
+
+.stylish_fluid p, a {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stylish_fluid .section_desc {
+    color: #dcdddc;
+    margin-bottom: 30px;
+}
+
+/* =============== CONTACT US =============== */
+
+
+.contact_us {
+    padding-top: 108px;
+    padding-bottom: 80px;
+}
+
+.contact_us p {
+    text-align: center;
+    margin-bottom: 76px;
+}
+
+.form_content__textarea {
+    min-width: 100%;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    color: #BDBDBD;
+    padding: 2px 13px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    height: 161px;
+}
+
+.form_content__textarea:focus {
+    border-color: #ff9b51;
+}
+
+.form_content__submit {
+    width: 144px;
+    height: 42px;
+    background: #ff9b51;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+/* =============== FOOTER =============== */
+
+.footer_fluid {
+    background: #000;
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+
+.icons_in_footer {
+    font-size: 15px;
+    color: #ccc;
+}
+
+
+
+
+
+
+
