@@ -16,19 +16,36 @@ a {
     text-decoration: none;
 }
 
-/* SPLITTERS */
+body {
+    overflow-x: hidden;
+}
+
+.section_title {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.section_desc {
+    font-size: 14px;
+    color: #b0b0b0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+}
+
+/* =============== SPLITTERS =============== */
 
 .splitter {
     width: 64px;
-    height: 1px;
-    margin: 40px 0;
+    height: 2px;
+    margin: 30px 0 30px 0;
 }
 
 .splitter-white {
     background: #fff;
 }
 
-/* HEADER */
+/* =============== HEADER =============== */
 
 .header {
     height: 70px;
@@ -60,7 +77,8 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
-    color: #fff;
+    color: #b0b0b0;
+    font-weight: 600;
 }
 
 .nav__item a:hover {
@@ -68,7 +86,7 @@ a {
     color: #ff8b38;
 }
 
-/* MODER TEMPLATE */
+/* =============== MODERN TEMPLATE =============== */
 
 .axure_section {
     background: url('../images/upside.png');
@@ -84,13 +102,300 @@ a {
     font-weight: 300;
     line-height: 46px;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .axure__desc {
     color: #fff;
     font-weight: 100;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
+    font-size: 16px;
 }
 
+.axure_download {
+    display: block;
+    width: 135px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 35px;
+    transition: 0.2s;
+}
+
+.axure_download:hover {
+    text-decoration: none;
+    background: #ff8b38;
+    color: #fff;
+}
+
+
+
+.form_header {
+    background: #f5f5f5;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 13px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin-top: 30px;
+}
+
+.form_header > span {
+    color: #ff8b38;
+}
+
+.form_content {
+    padding: 30px 37px;
+    background: #fff;
+}
+
+.from_content__input {
+    color: #BDBDBD;
+    padding: 0 13px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    margin-bottom: 36px;
+}
+
+.submit_trial {
+    height: 53px;
+    background: #000;
+    background: #ff9b51;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    text-align: center;
+    width: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/* =============== SOCIAL MEDIA =============== */
+
+.social_container {
+    border-bottom: 2px solid #b7b7b7;
+}
+.social_media {
+    padding: 23px 0;
+    padding-left: 10px; 
+}
+
+.social_media h3 {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.social_media p {
+    margin: 0;
+}
+
+.social_media__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social_media__icons > i {
+    font-size: 48px;
+    color: #b0b0b0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.social_media__icons > i:nth-child(7) {
+    transform: rotateZ(45deg);
+}
+
+.social_media__icons > i:hover {
+    color: #ff9b51;
+}
+
+/* =============== SERVICES =============== */
+.services_container {
+    background: #f5f5f5;
+}
+.services {
+    margin-top: 145px;
+    margin-bottom: 115px;
+}
+
+.services__tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.services__tabs__tab {
+    background: #333333;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height: 110px;   
+    max-width: 112px;
+    border: 1px solid #c7c7c7;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.tab_active {
+    background: #ff8b38;
+}
+
+#tab1 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#tab3 {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tab_content {
+    padding-left: 28px;
+}
+
+.tab_content h3{
+    margin-top: 5px;
+
+    margin-bottom: 50px;
+}
+
+
+.download_link {
+    display: block;
+    background: #ff8b38;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    max-width: 119px;
+    padding: 9px 0px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    transition: 0.2s;
+    margin-top: 43px;
+}
+
+.download_link:hover {
+    text-decoration: none;
+    color: #ff8b38;
+    background: transparent;
+    border: 2px solid #ff8b38;
+}
+
+.city_img {
+    max-width: 321px;
+    margin-top: 40px;
+}
+
+/* =============== SUB LIST =============== */
+
+.sub_list {
+    padding-top: 93px;
+    padding-bottom: 107px;
+}
+
+.sub_list img {
+    margin-left: -31px;
+    margin-top: 35px;
+}
+
+.splitter_orange {
+    background: #ff8b38;
+}
+
+
+
+.orange_circle {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.features {
+    margin-top: 40px;
+}
+
+.orange_circle i {
+    line-height: 32px;
+    font-size: 13px;
+    color: #ff8b38;
+    margin-left: 2px;
+}
+
+.feature__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;    
+}
+
+.feature__item__img {
+    min-width: 70px;
+}
+
+.feature__item__text h4 {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+/* =============== STANDART PICTURE SECTION =============== */
+
+.stpicture_fluid {
+    background: #f5f5f5;
+}
+
+.stpicture_list {
+    padding-top: 93px;
+    padding-bottom: 107px;
+}
+
+/* =============== THIS IS AWESOME =============== */
+
+
+.awesome_section {
+    text-align: center;
+    padding-top: 110px;   
+}
+
+
+.awesome_section h2{
+    margin: 0; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;     
+}
+
+.awesome_section .splitter {
+    margin-left: auto;
+    margin-right: auto;
+}
