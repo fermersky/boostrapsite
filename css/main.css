@@ -72,18 +72,35 @@ body {
     border-radius: 0;
 }
 
-.header {
-    height: 70px;
+.navbar-collapse {
+    border: none;
+}
+
+.navbar-nav {
     background: #000;
 }
 
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background: #000;    
+}
+
+.navbar-default .navbar-nav > li > a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #b0b0b0;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.collapse.navbar-collapse {
+    z-index: 2;
+}
+
+
 .logo {
-    display: flex;
-    width: auto;
-    height: 70px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    margin-top: 20px;
 }
 
 .nav__list {
@@ -94,22 +111,11 @@ body {
     height: 70px;
 }
 
-.nav__item {
-    margin-left: 46px;
-}
-
-.nav__item a{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #b0b0b0;
-    font-weight: 600;
-}
-
-.nav__item a:hover {
-    text-decoration: none;
+.navbar-default .navbar-nav > li > a:hover {
     color: #ff8b38;
+
 }
+
 
 /* =============== MODERN TEMPLATE =============== */
 
@@ -150,6 +156,7 @@ body {
     text-align: center;
     line-height: 35px;
     transition: 0.2s;
+    margin-left: 0;
 }
 
 .axure_download:hover {
@@ -688,6 +695,12 @@ body {
     font-weight: 600;
     border-radius: 3px;
     margin: 0 auto;
+    cursor: pointer;
+}
+
+.form_content__submit:hover {
+    background: #ff8e38;
+
 }
 
 /* =============== FOOTER =============== */
@@ -699,8 +712,76 @@ body {
 }
 
 .icons_in_footer {
-    font-size: 15px;
+    justify-content: center;
+}
+
+.icons_in_footer > i {
+    font-size: 24px;
     color: #ccc;
+    margin: 0 15px;
+}
+
+.copyright {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #808080;
+    text-align: center;
+    margin-top: 37px;
+}
+
+@media screen and (max-width: 1000px) {
+    .try_free.col-xs-offset-2 {
+        margin-left: 0;
+    }
+
+    .social_media__icons.pull-right {
+        float: left !important;
+    }
+
+    .social_media__icons > i {
+        margin-right: 20px;
+    }
+
+    .services {
+        margin-top: 40px;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .navbar-toggle {
+        margin: 20px;
+    }
+
+    .services__tabs {
+        flex-direction: row;
+    }
+
+    .services__tabs__tab {
+        width: 200px;
+        height: 50px;    
+    }
+
+    .houses_2_img {
+        margin-left: 0;
+    }
+
+    #prof_price_section {
+        margin: 40px 0;
+    }
+
+    .fb__author {
+        margin-bottom: 30px;
+    }
+    
+    .sity_img {
+        width: 100%;
+    }
+
+    .social_media__icons > i {
+        font-size: 30px;    
+    }
 }
 
 
