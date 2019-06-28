@@ -124,6 +124,7 @@ body {
     background-size: cover;
     padding-top: 110px;
     padding-bottom: 136px;
+    background-attachment: fixed;
 }
 
 .axure__title {
@@ -502,15 +503,20 @@ body {
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 5px solid #ff8b38;
-}
-
-#prof_price_section {
-    margin-top: -35px;
-}
-
-#prof_price {
     padding-bottom: 0;
-    border: none;
+    cursor: pointer;
+}
+
+.price_condition__price_desc:hover .accent_price{
+    opacity: 1;
+}
+
+
+.prices_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 40px;
 }
 
 
@@ -543,6 +549,8 @@ body {
     line-height: 40px;
     position: relative;
     margin-top: 20px;
+    transition: 0.1s;
+    opacity: 0;
 }
 
 .opp_list__item {
@@ -555,6 +563,7 @@ body {
     padding: 10px 0;
     border-bottom: 1px solid #f5f5f5;
 }
+
 
 /* =============== CUSTOMERS SAYING =============== */
 
@@ -635,11 +644,22 @@ body {
 /* =============== STYLISH =============== */
 
 .stylish_fluid {
-    background: url('../images/street.png') no-repeat;
+    background: url('../images/bg.jpg') no-repeat;
     background-size: cover;
     padding-top: 70px;
     padding-bottom: 62px;
+    background-attachment: fixed;
 }
+
+.stylish_fluid > div {
+    background: rgba(0, 0, 0,  .5);
+    border-radius: 26px;
+    padding: 20px;
+}
+
+
+
+
 
 .stylish_fluid h2 {
     color: #fff;
@@ -681,7 +701,8 @@ body {
 }
 
 .form_content__textarea:focus {
-    border-color: #ff9b51;
+    outline: none;
+    border-bottom: 1px solid #ff8b38;
 }
 
 .form_content__submit {

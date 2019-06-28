@@ -285,7 +285,7 @@
       <h2 class="section_head">PRICING OPTIONS</h2>
       <div class="splitter splitter_orange"></div>
       <div class="section_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, facere.</div>
-      <div class="row">
+      <div class="row prices_container">
         <div class="col-md-4 price_condtion">
           <div class="price_condition__name">Basic</div>
 
@@ -293,6 +293,7 @@
             <span class="dolsign">$</span>
             <span class="pricenum">0</span><br>
             <span class="pricedesc">Free for Life</span>
+            <div class="accent_price">DLYA LOHOV</div>
           </div>
 
           <ul class="opp_list">
@@ -332,6 +333,7 @@
             <span class="dolsign">$</span>
             <span class="pricenum">70</span><br>
             <span class="pricedesc">Monthly Content</span>
+            <div class="accent_price">FOR REAL GUYS</div>
           </div>
 
           <ul class="opp_list">
@@ -489,7 +491,7 @@
 
 
       $('.services__tabs__tab').on('click', function () {
-        let id = $(this).attr('id'); // get id clicked tab
+        let id = $(this).attr('id'); // get id of clicked tab
         let index = obj[id]; // get index clicked tab
 
         // after tab selection
